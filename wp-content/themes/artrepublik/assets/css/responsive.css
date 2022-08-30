@@ -218,16 +218,25 @@
   }
 
   .panel-bar__close-btn,
-  .panel-bar__search-btn {
+  .panel-bar__search-btn,
+  .panel-bar__search-form-submit, .panel-bar__search-form-close {
     width: 30px;
     height: 30px;
   }
 
-  .panel-bar__search-btn {
+  .panel-bar__search-form input {
+    height: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .panel-bar__search-btn,
+  .panel-bar__search-form-submit {
     font-size: 21px;
   }
 
-  .panel-bar__close-btn {
+  .panel-bar__close-btn,
+  .panel-bar__search-form-close {
     font-size: 29px;
   }
 
