@@ -1,0 +1,242 @@
+@media (hover: hover) and (min-width: 567px) {
+  .hd-hamburger-btn--style:hover .hamburger-btn-icon::after {
+    width: 100%;
+  }
+
+  .about-team__avatar-wrap:hover .about-team__social li a {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 350ms ease-out;
+  }
+
+  .about-team__social li a:hover {
+    background-color: var(--color-text_link);
+  }
+
+  .about-service__item-inner:hover {
+    box-shadow: -5px 0px 15px 0 rgb(0 0 0 / 10%);
+  }
+}
+
+@media (max-width: 1279px) {
+  .font-secondary-bold-06,
+  .article-grid-first .article-grid__title {
+    font-size: calc(1.3rem + 1.72vw);
+  }
+
+  .font-secondary-bold-08 {
+    font-size: calc(1.5rem + 3.7vw);
+  }
+
+  .font-secondary-bold-09 {
+    font-size: calc(1rem + 1.2vw);
+  }
+
+  .font-secondary-bold-05 {
+    font-size: calc(1rem + 0.625vw);
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 991px) {
+  .post-content__main {
+    order: 1;
+  }
+
+  .post-content__sidebar {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-x-01,
+  .max-x-02,
+  .max-x-03,
+  .max-x-04,
+  .max-x-05 {
+    padding: 0 15px;
+  }
+
+  .article-grid-first .article-grid {
+    min-height: 400px;
+    height: 80vh;
+  }
+
+  .article-grid-rest .article-grid__wrapper {
+    padding: 35px 0;
+  }
+
+  .article-grid-rest .article-grid__meta {
+    width: 100%;
+  }
+
+  .article-grid-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-grid-first {
+    order: 1;
+    margin: 0 -15px;
+  }
+
+  .article-grid-first .article-grid__body {
+    padding: 15px 15px 0;
+  }
+
+  .article-grid-title {
+    order: 2;
+    top: 0;
+    margin-bottom: 30px;
+  }
+
+  .article-grid-rest {
+    order: 3;
+  }
+  /* 
+  .post-header__inner {
+    min-height: 400px;
+  } */
+
+  /* .post-header__main {
+    position: static;
+    padding-top: 0;
+  }
+
+  .post-header__container {
+    position: relative;
+  } */
+
+  /* .post-header__meta {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    width: calc(100% - 30px);
+  } */
+
+  /* .post-header__content {
+    position: relative;
+    top: -40px;
+  }
+
+  .post-header__thumb {
+    min-height: 350px;
+  }
+
+  .post-header__thumb-wrap img {
+    min-height: 350px;
+  } */
+
+  /* .image-not-full .post-header__thumb {
+    padding: 40px 0 0;
+  } */
+
+  .section-slider__title {
+    top: 0;
+    padding: 30px 0;
+  }
+
+  .footer-nav__menu {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
+
+  .panel-bar {
+    width: 70%;
+    right: -100%;
+  }
+
+  .font-secondary-bold-10 {
+    font-size: calc(0.85rem + 0.5vw);
+  }
+
+  .category .article-part__excerpt {
+    display: none;
+  }
+
+  .about-team__list .slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-team__social li a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-team__list .slick-prev {
+    left: 10px;
+  }
+
+  .about-team__list .slick-next {
+    right: 10px;
+  }
+
+  .image-not-full .post-header__thumb {
+    padding: 60px 16px 7.25rem;
+  }
+}
+
+@media (max-width: 566px) {
+  .panel-bar {
+    width: 100%;
+  }
+
+  .article-part__wrapper {
+    padding: 15px 0;
+  }
+
+  .category__header {
+    padding-bottom: 35px;
+  }
+
+  .category__title {
+    padding-bottom: 0;
+  }
+
+  .about-service__item-inner {
+    box-shadow: -5px 0px 15px 0 rgb(0 0 0 / 10%);
+  }
+
+  .about-team__social > ul {
+    top: calc(100% - 80px);
+  }
+
+  .about-team__social li a {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 350ms ease-out;
+  }
+
+  .panel-bar__close-btn,
+  .panel-bar__search-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .panel-bar__search-btn {
+    font-size: 21px;
+  }
+
+  .panel-bar__close-btn {
+    font-size: 29px;
+  }
+
+  .panel-bar__menu > li > a {
+    font-size: 18px;
+  }
+
+  .font-secondary-bold-06,
+  .article-grid-first .article-grid__title {
+    font-size: calc(1rem + 1.72vw);
+  }
+}
