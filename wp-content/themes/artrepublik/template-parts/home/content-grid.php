@@ -22,7 +22,7 @@ $featured_posts = $data['list_post_featured'];
                                 // Setup this post for WP functions (variable must be named $post).
                                 setup_postdata($post); ?>
                                 <?php if ($i === 1) : ?>
-                                    <?php get_template_part('template-parts/article', 'grid'); ?>
+                                    <?php get_template_part('template-parts/article', 'grid', array('thumb_size'=> 'post-large')); ?>
                                     <?php break; ?>
                                 <?php endif; ?>
                             <?php endforeach; ?>
@@ -58,9 +58,28 @@ $featured_posts = $data['list_post_featured'];
                     $the_query = new WP_Query($args);
                     if ($the_query->have_posts()) : ?>
                         <div class="article-grid-list">
-                            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                <?php get_template_part('template-parts/article', 'grid'); ?>
-                            <?php endwhile; ?>
+                            <div class="article-grid-title text-center">
+                                <h2 class="font-secondary-bold-06 cl-black text-upper"><?php echo $data['title_ss'] ?></h2>
+                            </div>
+                            <!-- First -->
+                            <div class="article-grid-first">
+                                <?php
+                                $i = 0;
+                                while ($the_query->have_posts()) : $the_query->the_post();
+                                    $i++; ?>
+                                    <!-- < ?php get_template_part('template-parts/article', 'grid'); ?> -->
+                                    <?php if ($i === 1) : ?>
+                                        <?php get_template_part('template-parts/article', 'grid'); ?>
+                                        <?php break; ?>
+                                    <?php endif; ?>
+                                <?php endwhile; ?>
+                            </div>
+                            <!-- Rest -->
+                            <div class="article-grid-rest">
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <?php get_template_part('template-parts/article', 'grid'); ?>
+                                <?php endwhile; ?>
+                            </div>
                         </div>
                     <?php endif; ?>
                 <?php // Reset Post Data

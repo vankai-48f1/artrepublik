@@ -77,7 +77,7 @@
 
   /* font secondary style variable */
   --font-secondary-light: "Federation-Light", sans-serif;
-  --font-secondary-regular: "Monument-Regular", "Federation-Bold", "Arial-Bold",
+  --font-secondary-regular: var(--font-secondary-regular-name), "Monument-Regular", "Federation-Bold", "Arial-Bold",
     Arial, sans-serif;
 
   /* Common color section */

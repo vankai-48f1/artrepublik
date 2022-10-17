@@ -1,10 +1,14 @@
+<?php
+$thumb_size = $args['thumb_size'] ? $args['thumb_size'] : 'blog-thumbnail';
+?>
+
 <article class="article-grid">
     <a href="<?php the_permalink() ?>" class="article-grid__wrapper">
 
         <div class="article-grid__body">
             <div class="article-grid__thumb">
                 <!-- img-absolute-option -->
-                <?php the_post_thumbnail('blog-thumbnail',  ['class' => '']) ?>
+                <?php the_post_thumbnail($thumb_size,  ['class' => '']) ?>
             </div>
 
             <div class="article-grid__content">

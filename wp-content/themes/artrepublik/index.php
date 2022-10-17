@@ -31,6 +31,7 @@ Template Name: Home
                                 }
                             </style>
                         <?php endif; ?>
+                        <!-- < ?php var_dump($display_type, $ss_data); die; ?> -->
                         <?php get_template_part('template-parts/home/content', $display_type, $ss_data); ?>
                     </div>
             <?php

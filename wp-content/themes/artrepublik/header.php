@@ -25,7 +25,20 @@
     <!-- slick -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/vendor/slick/slick.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/vendor/slick/slick-theme.css">
-
+    
+    <?php
+    // Dynamic font family
+    $font_url = get_field('link_font_style', 'option');
+    $css_rules_font = get_field('css_rules_font', 'option');
+    if ($font_url && $css_rules_font) :
+    ?>
+        <style>
+            @import url(<?php echo $font_url; ?>);
+            :root {
+                --font-secondary-regular-name: <?php echo $css_rules_font; ?>;
+            }
+        </style>
+    <?php endif; ?>
     <?php wp_head() ?>
 </head>
 
